@@ -35,7 +35,7 @@ class ClientTest extends TestCase
 
         $body = [];
 
-        $res = $dataopenClient->request("/libra/openapi/v1/open/flight-list", "GET", $headers, $params, $body);
+        $res = $dataopenClient->request("/xxx/openapi/v1/open/flight-list", "GET", $headers, $params, $body);
 
         echo "\n\nOutput: ", json_encode($res);
     }
@@ -57,7 +57,7 @@ class ClientTest extends TestCase
         ];
 
         $res = $dataopenClient->request(
-            "/libra/openapi/v1/open/flight/version/6290880/add-test-user",
+            "/xxx/openapi/v1/open/flight/version/6290880/add-test-user",
             "POST",
             $headers,
             $params,
